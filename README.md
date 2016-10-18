@@ -7,8 +7,7 @@ I consumed an API from [Openweather](https://openweathermap.org/api) and also [T
 To run the application, you have to install the following dependencies
 
 ```
-- npm install twitter
-- npm install dotenv --save
+- npm install twitter request chalk figlet clear dotenv readline --save
 ```
 
 In your .env file you need to put in your API keys and ID in the appropriate fields like so:
@@ -19,8 +18,9 @@ consumer_secret='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 access_token_keys='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 access_token_secret='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 openweather_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-the areas marked as 'x' are to filled in with the API keys and token gotten from the various API.
 ```
 
+the areas marked as 'x' are to filled in with the API keys and token gotten from the various API.
+
 After installing these dependencies and getting the API details you can start the application by 
-running node index.js in the command line and follow the instructions.
+running ```node index.js``` in the command line and follow the instructions.
