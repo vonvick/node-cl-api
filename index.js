@@ -14,15 +14,7 @@ var tweet = new Twitter({
 });
 
 console.log('Welcome to the WEATHER and TWEET API');
-console.log('Press any Key to see the prompt...')
-
-// function that is called at the beginning of the application
-// function intro() {
-//   console.log('Press "1" to get the weather of a location');
-//   console.log('Press "2" to post a tweet on tweeter');
-//   console.log('Type "exit" to exit the application');
-// }
-// intro();
+console.log('Press any Key and Enter to see the prompt...')
 
 // Initiate the Questions asked to the user
 var read = readline.createInterface({
@@ -46,7 +38,7 @@ read.on('line',(line) => {
       }, function(error, response, body){
         if(error) {
           console.log(error);
-        } else {
+        } else if (response.statusCode === 200) {
           var object = JSON.parse(body);
           console.log('Your status code is: ',response.statusCode);
           console.log('The city name is: ', object.name);
@@ -54,6 +46,9 @@ read.on('line',(line) => {
           console.log('The temperature is: ', object.main.temp -273, 'celcius');
           console.log('The humidity is: ', object.main.humidity, '%');
           console.log('');
+        } else {
+            console.log('You did not enter a valid city');
+            console.log('please enter a valid city');
         }
     });
     read.close();
