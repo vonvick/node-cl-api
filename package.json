@@ -1,0 +1,34 @@
+{
+  "name": "node-cl-api",
+  "version": "1.0.0",
+  "description": "A node.js command line application that consumes public APIs using HTTP client library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonvick/node-cl-api.git"
+  },
+  "keywords": [
+    "node.js",
+    "cli",
+    "javascript",
+    "API",
+    "HTTP",
+    "twitter",
+    "openweather"
+  ],
+  "author": "Victor Nwaiwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vonvick/node-cl-api/issues"
+  },
+  "homepage": "https://github.com/vonvick/node-cl-api#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "readline": "^1.3.0",
+    "request": "^2.75.0",
+    "twitter": "^1.4.0"
+  }
+}
